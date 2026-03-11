@@ -1,16 +1,16 @@
 data/
 
 # Sphinx build output
-sphinx/_build/
-sphinx/**/_build/
+handledning/_build/
+handledning/**/_build/
 
 # Notebook/editor checkpoints inside docs
-sphinx/**/.ipynb_checkpoints/
+handledning/**/.ipynb_checkpoints/
 
 # Local Python envs (if created under sphinx)
-sphinx/.venv/
-sphinx/venv/
+handledning/.venv/
+handledning/venv/
 
 # Optional local caches
-sphinx/.pytest_cache/
-sphinx/.mypy_cache/
+handledning/.pytest_cache/
+handledning/.mypy_cache/

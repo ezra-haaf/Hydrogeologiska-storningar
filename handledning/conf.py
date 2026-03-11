@@ -1,5 +1,5 @@
 project = "Notebook Gallery Boilerplate"
-author = "Chalmers"
+author = "Ezra Haaf (Chalmers)"
 
 extensions = [
     "nbsphinx",
