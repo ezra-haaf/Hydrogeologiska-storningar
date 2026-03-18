@@ -1,4 +1,6 @@
-data/
+datapool/
+raw scripts/
+notebooks_temp/
 
 # Sphinx build output
 handledning/_build/

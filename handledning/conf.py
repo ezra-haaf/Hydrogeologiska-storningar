@@ -1,4 +1,4 @@
-project = "Notebook Gallery Boilerplate"
+project = "Handledning: När? Var? Hur? - Identifikation av orsaker till hydrogeologiska störningar i undermarksbebeyggelse"
 author = "Ezra Haaf (Chalmers)"
 
 extensions = [
@@ -12,6 +12,10 @@ suppress_warnings = ["config.cache"]
 
 nbsphinx_execute = "never"
 
-html_theme = "alabaster"
+html_theme = "sphinxawesome_theme"
 html_title = project
 html_static_path = ["_static"]
+
+html_logo = "_static/chalmers.png"
+
+html_permalinks = False
