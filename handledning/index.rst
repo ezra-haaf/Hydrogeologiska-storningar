@@ -16,5 +16,4 @@ Kontakt: Ezra Haaf, Chalmers, ezra@chalmers.se
    inledning
    basics
    verktyg
-   identifikation
    resurskatalog
