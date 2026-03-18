@@ -68,7 +68,7 @@ Datakällor
 Litteratur
 -----------
 Referensgranskade artiklar och publikationer som är relevanta för metoderna och arbetsflödena
-^^^^^^^^^^^
+"""""""""""
 
 `2022 - Data-Driven Estimation of Groundwater Level Time-Series at Unmonitored Sites Using Comparative Regional Analysis <https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022WR033470>`_
    Artikeln presenterar en data-driven metod för att uppskatta dagliga
@@ -98,8 +98,8 @@ Referensgranskade artiklar och publikationer som är relevanta för metoderna oc
    signaturer kan anvandas till exempel for att att välja
    modellstruktur utifran observerad grundvattendynamik.
 
-Övriga relevanta publikationer
-^^^^^^^^^^^
+Övriga relevanta publikationer (utanför projektet)
+"""""""""""
 
 `2024 - SGF Rapport 2024:2 Akvifärs referensmetod <https://svenskageotekniskaforeningen.se/wp-content/uploads/Publikationer/SGF_Rapporter/2024_2_Akvifars_refmetod.pdf>`_
    Metodrapport som beskriver en referensmetod för regressionsbaserad beskrivning av ostörda 
