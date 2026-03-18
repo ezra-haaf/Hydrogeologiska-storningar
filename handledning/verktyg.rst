@@ -2,7 +2,8 @@ Verktyg
 =======
 
 Denna sida samlar de viktigaste verktygen och arbetsstegen för att komma igång
-med analysmiljön. Fokus ligger på praktisk användning: installation,
+med identifikation av orsaker till hydrogeologiska störningar i undermarksbebeyggelse. 
+Fokus ligger på praktisk användning: installation,
 databeredning och översikter över de notebook-baserade arbetsflöden som används
 i handledningen.
 
@@ -17,23 +18,6 @@ De viktigaste byggstenarna är:
 * Pastas för tidsserieanalys av hydrogeologiska data
 * stödverktyg för databeredning och jämförelse av tidsserier
 
-Installation och uppstart
--------------------------
-
-.. nbgallery::
-   :caption: Kom igång
-
-   examples/get-python-running
-
-Arbetsflöden
-------------
-
-.. nbgallery::
-   :caption: Översikter och exempel
-
-   examples/tool-overview
-   examples/workflow-overview
-   examples/workflow-data-processing
 
 Databeredning och grundläggande modellering
 -------------------------------------------
@@ -42,7 +26,7 @@ Databeredning och grundläggande modellering
    :caption: Förbehandling och modellintroduktion
 
    examples/preprocessing
-   examples/model_primer
+   examples/missforest-gapfilling
 
 Kommentar
 ---------
