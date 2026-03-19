@@ -23,9 +23,10 @@ Databeredning och grundläggande modellering
 -------------------------------------------
 
 .. nbgallery::
-   :caption: Förbehandling och modellintroduktion
+   :caption: Databehandling 
 
-   examples/preprocessing
+   examples/kompensation
+   examples/nederbord
    examples/missforest-gapfilling
 
 Kommentar
