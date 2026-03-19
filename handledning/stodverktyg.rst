@@ -18,6 +18,7 @@ Här finns notebooks som visar hur data kan förberedas för användning i tidss
 
    examples/kompensation
    examples/nederbord
+   examples/temperatur
    examples/missforest-gapfilling
 
 
