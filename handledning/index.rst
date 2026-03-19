@@ -14,6 +14,6 @@ Kontakt: Ezra Haaf, Chalmers, ezra@chalmers.se
    :caption: Innehållsförteckning
 
    inledning
-   basics
-   verktyg
+   stodverktyg
+   identifikation
    resurskatalog
