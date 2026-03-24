@@ -1,0 +1,26 @@
+{
+  "well_id": "22S107GU",
+  "model_name": "my_model",
+  "selected_pet_method": "FAO-24",
+  "calibration_period": {
+    "tmin": "2022-12-22",
+    "tmax": "2024-02-19"
+  },
+  "validation_period": {
+    "tmin": "2024-02-20",
+    "tmax": "2025-02-19"
+  },
+  "model_structure": {
+    "rfunc": "Gamma",
+    "recharge_model": "FlexModel",
+    "gw_uptake": true,
+    "snow": true,
+    "stressmodel_name": "rch"
+  },
+  "scores": {
+    "r2_calibration": 0.9806738675078156,
+    "r2_validation": 0.9132714527567194,
+    "r2_extended": 0.9846250416614162
+  },
+  "parameter_file": "kalibrering_parameters_FAO-24.csv"
+}

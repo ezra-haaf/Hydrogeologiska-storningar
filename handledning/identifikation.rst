@@ -11,5 +11,8 @@ Identifikation av bidrag från olika störningar
 Här finns notebooks som visar hur data kan förberedas för användning i tidsserieanalys.
 
 .. nbgallery::
-   :caption: Databehandling 
+   :caption: Kalibrering och historisk simulering
+
+   examples/kalibrering
+   examples/hindcasting
 
