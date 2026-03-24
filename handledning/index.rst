@@ -15,7 +15,7 @@ Projektets syfte har varit att utveckla och pröva datadrivna och processbaserad
 
 .. toctree::
    :maxdepth: 2
-   :caption: **Innehållsförteckning**
+   
 
    inledning
    stodverktyg

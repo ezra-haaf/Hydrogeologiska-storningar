@@ -14,7 +14,6 @@ Databeredning av vanlig input data
 Här finns notebooks som visar hur data kan förberedas för användning i tidsserieanalys.
 
 .. nbgallery::
-   :caption:  
 
    examples/kompensation
    examples/nederbord
@@ -33,7 +32,6 @@ Sidorna är kopierade från Pastas officiella dokumentation, och är avsedda att
 Fler exempel kan hittas här: https://pastas.readthedocs.io/en/latest/examples/index.html
 
 .. nbgallery::
-   :caption: 
 
    examples/preprocessing
    examples/model_primer

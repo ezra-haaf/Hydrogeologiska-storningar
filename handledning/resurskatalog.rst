@@ -68,7 +68,7 @@ Datakällor
 Litteratur
 -----------
 Referensgranskade artiklar och publikationer som är relevanta för metoderna och arbetsflödena
-"""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 `2022 - Data-Driven Estimation of Groundwater Level Time-Series at Unmonitored Sites Using Comparative Regional Analysis <https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022WR033470>`_
    Artikeln presenterar en data-driven metod för att uppskatta dagliga
@@ -99,13 +99,13 @@ Referensgranskade artiklar och publikationer som är relevanta för metoderna oc
    modellstruktur utifran observerad grundvattendynamik.
 
 Övriga relevanta publikationer (utanför projektet)
-"""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
 `2024 - SGF Rapport 2024:2 Akvifärs referensmetod <https://svenskageotekniskaforeningen.se/wp-content/uploads/Publikationer/SGF_Rapporter/2024_2_Akvifars_refmetod.pdf>`_
    Metodrapport som beskriver en referensmetod för regressionsbaserad beskrivning av ostörda 
    grundvattenförhållanden i ett prognosrör. Metoden är avsedd att användas som stöd i 
    bedömning av påverkan grundvattenförhållanden i samband med byggprojekt. 
-   Metoden är implementerat i :ref:`verktyget gwrefpy <gwrefpy>
+   Metoden är implementerat i gwrefpy, se ovan.
    
 
 
