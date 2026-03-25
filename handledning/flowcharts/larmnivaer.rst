@@ -2,7 +2,9 @@ Förbättra underlag för Larmnivåer och Extremvärdesanalys
 ========================================================
 
 För att undvika beroende av uppmätt data från enskilda mätpunkter, eller referensstationer
-med låg tillförlitlighet, föreslås att använda modellerade grundvattennivåer som underlag för larmnivåer och extremvärdesanalys.
+med låg tillförlitlighet, föreslås att använda modellerade grundvattennivåer. Modellen kan sedan 
+användas för att rekonstruera historiska nivåer baserat på historisk klimatdata, och därmed ge 
+ett mer robust underlag för larmnivåer och extremvärdesanalys.
 
 Nedan hittas stegen för att åstadkomma detta, inklusive datakällor och modelleringsverktyg. 
 
