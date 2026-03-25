@@ -7,7 +7,7 @@ med låg tillförlitlighet, föreslås att använda modellerade grundvattennivå
 Nedan hittas stegen för att åstadkomma detta, inklusive datakällor och modelleringsverktyg.
 
 .. mermaid::
-
+   %%{init: {'theme':'forest'}}%% 
    flowchart TD
    GWOBS["Bearbetning av Grundvattennivå observationer"]
    KLIMAT["Hämta klimatdata"]
