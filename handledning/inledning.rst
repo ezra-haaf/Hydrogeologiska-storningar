@@ -27,7 +27,7 @@ Rekommenderade arbetsflöden
 .. nbgallery::
    :caption: Workflow notebooks
 
-   examples/tool-overview
+   flowcharts/larmnivaer
    examples/workflow-data-processing
    examples/workflow-overview
 

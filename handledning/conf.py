@@ -4,6 +4,7 @@ author = "Ezra Haaf (Chalmers)"
 extensions = [
     "nbsphinx",
     "nbsphinx_link",
+    'sphinxcontrib.mermaid',
 ]
 
 templates_path = ["_templates"]
