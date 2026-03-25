@@ -1,5 +1,6 @@
 project = "Handledning: När? Var? Hur? - Identifikation av orsaker till hydrogeologiska störningar i undermarksbebeyggelse"
 author = "Ezra Haaf (Chalmers)"
+copyright = '2026, Ezra Haaf'
 
 extensions = [
     "nbsphinx",
@@ -10,6 +11,8 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 suppress_warnings = ["config.cache"]
+
+mermaid_output_format = "svg"
 
 nbsphinx_execute = "never"
 

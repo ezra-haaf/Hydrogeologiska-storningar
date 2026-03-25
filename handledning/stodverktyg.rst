@@ -20,7 +20,7 @@ Här finns notebooks som visar hur data kan förberedas för användning i tidss
    examples/temperatur
    examples/klimatdata
    examples/avdunstning
-   examples/ifyll-linjar_cv
+   examples/ifyllnad-linjar_cv
    examples/missforest-gapfilling
 
 
