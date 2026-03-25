@@ -1,6 +1,7 @@
 datapool/
 raw scripts/
 notebooks_temp/
+powershell/
 
 # Sphinx build output
 handledning/_build/
