@@ -4,13 +4,15 @@ Förbättra underlag för Larmnivåer och Extremvärdesanalys
 För att undvika beroende av uppmätt data från enskilda mätpunkter, eller referensstationer
 med låg tillförlitlighet, föreslås att använda modellerade grundvattennivåer som underlag för larmnivåer och extremvärdesanalys.
 
-Nedan hittas stegen för att åstadkomma detta, inklusive datakällor och modelleringsverktyg.
+Nedan hittas stegen för att åstadkomma detta, inklusive datakällor och modelleringsverktyg. 
+
+Klicka på lådorna för att komma till relevanta skripter.
 
 .. graphviz::
 
    digraph G {
      rankdir=LR;
-     node [shape=box, style="rounded,filled", fillcolor="#e8f3e8"];
+     node [shape=box, style="rounded,filled", fillcolor="#e8f3e8", penwidth=0];
 
      GWOBS [label="Bearbetning av\nGrundvattennivå observationer", URL="../examples/kompensation.html", target="_top"];
      KLIMAT [label="Hämta klimatdata", URL="../examples/klimatdata.html", target="_top"];
@@ -19,14 +21,14 @@ Nedan hittas stegen för att åstadkomma detta, inklusive datakällor och modell
      HIST   [label="Historisk rekonstruktion", URL="../examples/hindcasting.html", target="_top"];
      NED    [label="Nederbörd", URL="../examples/nederbord.html", target="_top"];
      TEMP   [label="Temperatur", URL="../examples/temperatur.html", target="_top"];
-     PL     [label=""];
 
      KLIMAT -> AVD;
-     GWOBS -> PL;
-     PL -> GWMOD;
+     GWOBS -> GWMOD;
      AVD -> GWMOD;
      GWMOD -> HIST;
-     KLIMAT -> NED  [style=dashed];
-     KLIMAT -> TEMP [style=dashed];
+     KLIMAT -> NED ;
+     NED -> GWMOD;
+     KLIMAT -> TEMP;
+     TEMP -> GWMOD;
    }
        
