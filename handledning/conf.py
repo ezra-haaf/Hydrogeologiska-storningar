@@ -12,6 +12,7 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 suppress_warnings = ["config.cache"]
 
+graphviz_output_format = "svg"
 
 nbsphinx_execute = "never"
 
