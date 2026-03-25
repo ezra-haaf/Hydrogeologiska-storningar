@@ -11,7 +11,3 @@ sphinx:
 python:
   install:
     - requirements: handledning/requirements.txt
-
-jobs:
-  post_install:
-    - npm install -g @mermaid-js/mermaid-cli
