@@ -6,7 +6,9 @@ med låg tillförlitlighet, föreslås att använda modellerade grundvattennivå
 
 Nedan hittas stegen för att åstadkomma detta, inklusive datakällor och modelleringsverktyg. 
 
-Klicka på lådorna för att komma till relevanta skripter.
+*(Klicka på lådorna för att komma till relevanta skripter.)*
+
+
 
 .. graphviz::
 
@@ -14,6 +16,7 @@ Klicka på lådorna för att komma till relevanta skripter.
      rankdir=LR;
      node [shape=box, style="rounded,filled", fillcolor="#e8f3e8", penwidth=0];
 
+     GWMAT [label="Mätning av\nGrundvattennivåer"]; 
      GWOBS [label="Bearbetning av\nGrundvattennivå observationer", URL="../examples/kompensation.html", target="_top"];
      KLIMAT [label="Hämta klimatdata", URL="../examples/klimatdata.html", target="_top"];
      AVD    [label="Avdunstningsmodellering", URL="../examples/avdunstning.html", target="_top"];
@@ -22,11 +25,13 @@ Klicka på lådorna för att komma till relevanta skripter.
      NED    [label="Nederbörd", URL="../examples/nederbord.html", target="_top"];
      TEMP   [label="Temperatur", URL="../examples/temperatur.html", target="_top"];
 
+
      KLIMAT -> AVD;
+     GWMAT -> GWOBS;
      GWOBS -> GWMOD;
      AVD -> GWMOD;
      GWMOD -> HIST;
-     KLIMAT -> NED ;
+     KLIMAT -> NED;
      NED -> GWMOD;
      KLIMAT -> TEMP;
      TEMP -> GWMOD;
