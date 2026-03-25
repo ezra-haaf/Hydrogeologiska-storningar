@@ -6,32 +6,27 @@ med låg tillförlitlighet, föreslås att använda modellerade grundvattennivå
 
 Nedan hittas stegen för att åstadkomma detta, inklusive datakällor och modelleringsverktyg.
 
-.. mermaid::
-   %%{init: {'theme':'forest'}}%%
-   flowchart TD
-   GWOBS["Bearbetning av Grundvattennivå observationer"]
-   KLIMAT["Hämta klimatdata"]
-   AVD["Avdunstningsmodellering"]
-   GWMOD["Grundvattenmodellering"]
-   PL[""]
-   HIST["Historisk rekonstruktion"]
-   NED["Nederbörd"]
-   TEMP["Temperatur"]
+.. graphviz::
 
-   KLIMAT --> AVD
-   GWOBS --> PL
-   PL --> GWMOD
-   AVD --> GWMOD
-   GWMOD --> HIST
+   digraph G {
+     rankdir=LR;
+     node [shape=box, style="rounded,filled", fillcolor="#e8f3e8"];
 
-   KLIMAT -.-> NED
-   KLIMAT -.-> TEMP
+     GWOBS [label="Bearbetning av\nGrundvattennivå observationer", URL="../examples/kompensation.html", target="_top"];
+     KLIMAT [label="Hämta klimatdata", URL="../examples/klimatdata.html", target="_top"];
+     AVD    [label="Avdunstningsmodellering", URL="../examples/avdunstning.html", target="_top"];
+     GWMOD  [label="Grundvattenmodellering", URL="../examples/kalibrering.html", target="_top"];
+     HIST   [label="Historisk rekonstruktion", URL="../examples/hindcasting.html", target="_top"];
+     NED    [label="Nederbörd", URL="../examples/nederbord.html", target="_top"];
+     TEMP   [label="Temperatur", URL="../examples/temperatur.html", target="_top"];
+     PL     [label=""];
 
-   click GWOBS "../examples/kompensation.html" "Öppna kompensation"
-   click KLIMAT "../examples/klimatdata.html" "Öppna klimatdata"
-   click NED "../examples/nederbord.html" "Öppna nederbörd"
-   click TEMP "../examples/temperatur.html" "Öppna temperatur"
-   click AVD "../examples/avdunstning.html" "Öppna avdunstning"
-   click GWMOD "../examples/kalibrering.html" "Öppna kalibrering"
-   click HIST "../examples/hindcasting.html" "Öppna hindcasting"
+     KLIMAT -> AVD;
+     GWOBS -> PL;
+     PL -> GWMOD;
+     AVD -> GWMOD;
+     GWMOD -> HIST;
+     KLIMAT -> NED  [style=dashed];
+     KLIMAT -> TEMP [style=dashed];
+   }
        
