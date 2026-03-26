@@ -18,7 +18,7 @@ ifyllnad av data, baserat på datamängd, mönster i data och analysmål.
 .. graphviz::
 
    digraph G {
-     rankdir=TB;
+     rankdir=LR;
      splines=ortho;
      nodesep=0.4;
      ranksep=0.5;
@@ -27,7 +27,8 @@ ifyllnad av data, baserat på datamängd, mönster i data och analysmål.
      edge [fontname="Helvetica", fontsize=10, color="#555555"];
 
      // Shapes/styles
-     Start [label="Data set", shape=box, style="rounded,filled", fillcolor="#f3f1e8"];
+     Start [label="Data set", shape=box, style="rounded,filled", fillcolor="#f3f1e8",
+           URL="../examples/kompensation.html", target="_top"];
      D1 [label="Referensdata tillgänglig?", shape=diamond, style="filled", fillcolor="#fff4cc"];
      D2 [label="Referenstidsserier har data\ndär luckor finns?", shape=diamond, style="filled", fillcolor="#fff4cc"];
      D3 [label="God passning\n(per rör)?", shape=diamond, style="filled", fillcolor="#fff4cc"];
