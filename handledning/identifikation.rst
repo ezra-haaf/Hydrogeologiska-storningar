@@ -19,7 +19,7 @@ Här finns notebooks som visar hur data kan förberedas för användning i tidss
 .. nbgallery::
    :caption: Strategier för att fylla i luckor i data set
 
-   examples/ifyllnad_linjar_cv
+   examples/ifyllnad_lm_cv
    examples/ifyllnad_mf_cv
 
 .. nbgallery::
