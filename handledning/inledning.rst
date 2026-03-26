@@ -28,7 +28,7 @@ Rekommenderade arbetsflöden
    :caption: Workflow notebooks
 
    flowcharts/larmnivaer
-   examples/workflow-data-processing
-   examples/workflow-overview
+   flowcharts/ifyllnad
+
 
 

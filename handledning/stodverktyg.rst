@@ -1,4 +1,4 @@
-Stödverktyg & rutiner
+Databeredning & rutiner
 =====================
 
 Denna sida samlar de viktigaste verktygen och arbetsstegen för att förberade data och
@@ -20,8 +20,7 @@ Här finns notebooks som visar hur data kan förberedas för användning i tidss
    examples/temperatur
    examples/klimatdata
    examples/avdunstning
-   examples/ifyllnad-linjar_cv
-   examples/missforest-gapfilling
+
 
 
 Pastas basics

@@ -14,6 +14,8 @@ suppress_warnings = ["config.cache"]
 
 graphviz_output_format = "svg"
 
+github_url = "https://github.com/ezra-haaf/Hydrogeologiska-storningar/"
+
 nbsphinx_execute = "never"
 
 html_theme = "sphinxawesome_theme"
