@@ -9,7 +9,7 @@ De viktigaste byggstenarna är:
 * Python som analysmiljö
 * Jupyter notebooks för dokumenterade arbetsflöden
 * Pastas för tidsserieanalys av hydrogeologiska data
-* stödverktyg för databeredning och jämförelse av tidsserier
+* Databeredning och jämförelse av tidsserier
 
 
 Getting started
