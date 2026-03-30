@@ -15,7 +15,7 @@ Nedan hittas stegen för att åstadkomma detta, inklusive datakällor och modell
 .. graphviz::
 
    digraph G {
-     rankdir=LR;
+     rankdir=TD;
      splines=ortho;
      node [shape=box, style="rounded,filled", fillcolor="#e8f3e8", penwidth=0];
 
