@@ -18,7 +18,7 @@ ifyllnad av data, baserat på datamängd, mönster i data och analysmål.
 .. graphviz::
 
    digraph G {
-     rankdir=LR;
+     rankdir=TD;
      splines=ortho;
      nodesep=0.4;
      ranksep=0.5;
