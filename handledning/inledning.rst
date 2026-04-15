@@ -7,18 +7,11 @@ Arbetet i handledningen utgår främst från Python och notebook-baserade exempe
 De viktigaste byggstenarna är:
 
 * Python som analysmiljö
+För att komma igång, se :doc:`Komma igång med Python <examples/get-python-running>`.
+
 * Jupyter notebooks för dokumenterade arbetsflöden
 * Pastas för tidsserieanalys av hydrogeologiska data
-* Databeredning och jämförelse av tidsserier
 
-
-Getting started
----------------
-
-.. nbgallery::
-   :caption: Installera Python
-
-   examples/get-python-running
 
 Analysis workflows
 ------------------
@@ -29,6 +22,7 @@ Rekommenderade arbetsflöden
 
    flowcharts/larmnivaer
    flowcharts/ifyllnad
+   flowcharts/varnarhur1
 
 
 

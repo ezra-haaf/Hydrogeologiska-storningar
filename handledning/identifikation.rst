@@ -25,4 +25,5 @@ Här finns notebooks som visar hur data kan förberedas för användning i tidss
 .. nbgallery::
    :caption: Identifikation av bidrag från olika störningar
 
-
+   examples/tunnel1_gbg
+   examples/tunnel2_gbg
