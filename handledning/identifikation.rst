@@ -27,3 +27,4 @@ Här finns notebooks som visar hur data kan förberedas för användning i tidss
 
    examples/tunnel1_gbg
    examples/tunnel2_gbg
+   examples/tunnel3_gbg
