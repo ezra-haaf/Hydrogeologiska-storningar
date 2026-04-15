@@ -23,8 +23,8 @@ Nedan hittas ett beslutsträd som guidar användaren genom processen att bygga e
      GWOBS [label="Bearbetning av\nGrundvattennivå observationer"];
      KLIMAT [label="Hämta klimatdata", URL="../examples/klimatdata.html", target="_top"];
      AVD    [label="Avdunstningsmodellering", URL="../examples/avdunstning.html", target="_top"];
-     GWMOD  [label="Grundvattenmodellering", URL="../examples/kalibrering.html", target="_top"];
-     HIST   [label="Historisk rekonstruktion", URL="../examples/hindcasting.html", target="_top"];
+     GWMOD  [label="Grundvattenmodellering", URL="../examples/tunnel1_gbg.html", target="_top"];
+     ADD1   [label="Tillägg av störningsserier", URL="../examples/tunnel2_gbg.html", target="_top"];
      NED    [label="Nederbörd", URL="../examples/nederbord.html", target="_top"];
      TEMP   [label="Temperatur", URL="../examples/temperatur.html", target="_top"];
 
@@ -33,7 +33,7 @@ Nedan hittas ett beslutsträd som guidar användaren genom processen att bygga e
      GWMAT -> GWOBS;
      GWOBS -> GWMOD;
      AVD -> GWMOD;
-     GWMOD -> HIST;
+     GWMOD -> ADD1;
      KLIMAT -> NED;
      NED -> GWMOD;
      KLIMAT -> TEMP;
