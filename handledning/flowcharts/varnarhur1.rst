@@ -14,29 +14,56 @@ Nedan hittas ett beslutsträd som guidar användaren genom processen att bygga e
 
 .. graphviz::
 
-   digraph G {
-     rankdir=TD;
-     splines=ortho;
-     node [shape=box, style="rounded,filled", fillcolor="#e8f3e8", penwidth=0];
+digraph G {
+  rankdir=TD;
+  splines=ortho;
+  node [shape=box, style="rounded,filled", fillcolor="#e8f3e8", penwidth=0, fontname="Helvetica"];
 
-     GWMAT [label="Mätning av\nGrundvattennivåer"]; 
-     GWOBS [label="Bearbetning av\nGrundvattennivå observationer"];
-     KLIMAT [label="Hämta klimatdata", URL="../examples/klimatdata.html", target="_top"];
-     AVD    [label="Avdunstningsmodellering", URL="../examples/avdunstning.html", target="_top"];
-     GWMOD  [label="Grundvattenmodellering", URL="../examples/tunnel1_gbg.html", target="_top"];
-     ADD1   [label="Tillägg av störningsserier", URL="../examples/tunnel2_gbg.html", target="_top"];
-     NED    [label="Nederbörd", URL="../examples/nederbord.html", target="_top"];
-     TEMP   [label="Temperatur", URL="../examples/temperatur.html", target="_top"];
+  GWMAT [label="Insamling av\nGrundvattennivåer"]; 
+  
+  KLIMAT [label="Insamling av klimatdata", URL="../examples/klimatdata.html", target="_top", width=4];
+  STOR [label="Insamling av störningsdata"];
+  #STOBS [label="Bearbetning av\nstörningsdata"];
+  #AVD    [label="Avdunstningsmodellering", URL="../examples/avdunstning.html", target="_top"];
+  GWMOD  [label="Grundvattenmodellering", URL="../examples/tunnel1_gbg.html", target="_top",width=5.5];
+  DECIDE1 [label="Residualer \nnormalföredelade", shape=diamond];
+  DECIDE2 [label="Residualer \nnormalföredelade", shape=diamond];
+  ADD1   [label="Grundvattenmodellering med störningsserier", URL="../examples/tunnel2_gbg.html", target="_top", width=4];
+  NED    [label="Nederbörd", URL="../examples/nederbord.html", target="_top"];
+  TEMP   [label="Temperatur", URL="../examples/temperatur.html", target="_top"];
+  FIN [label="Slutgiltig modell", shape=ellipse, fillcolor="#d1e7dd", width=3];
+  { rank=same; GWMAT; KLIMAT; STOR; }
+  
 
+  subgraph cluster_processing {
+      label="Bearbetning/förädling";
+      style="filled,rounded";
+      color="grey95";
+      fontname="Helvetica-Bold"
 
-     KLIMAT -> AVD;
-     GWMAT -> GWOBS;
-     GWOBS -> GWMOD;
-     AVD -> GWMOD;
-     GWMOD -> ADD1;
-     KLIMAT -> NED;
-     NED -> GWMOD;
-     KLIMAT -> TEMP;
-     TEMP -> GWMOD;
-   }
-       
+      GWOBS [label="Bearbetning av\nGrundvattennivå observationer", fillcolor="white"];
+      STOBS [label="Bearbetning av\nstörningsdata", fillcolor="white"];
+      AVD [label="Avdunstningsmodellering", fillcolor="white"];
+      { rank=same; GWOBS; STOBS; AVD}
+  }
+
+  KLIMAT -> AVD;
+  GWMAT -> GWOBS [lhead=cluster_processing];
+  GWOBS -> GWMOD;
+  NED -> AVD;
+  TEMP -> AVD;
+  AVD -> GWMOD;
+  GWMOD -> DECIDE1;
+  DECIDE1 -> ADD1 [label="Nej", labelfloat=true, fontname="Helvetica-Oblique"];
+  DECIDE1 -> FIN [label="Ja", fontname="Helvetica-Oblique"];
+  KLIMAT -> NED;
+  NED -> GWMOD;
+  KLIMAT -> TEMP;
+  TEMP -> GWMOD;
+  STOR -> STOBS;
+  STOBS -> ADD1;
+  ADD1 -> DECIDE2; 
+  DECIDE2 -> FIN [label="Ja", fontname="Helvetica-Oblique"];  
+  DECIDE2 -> STOR [label="Nej", fontname="Helvetica-Oblique"];
+}
+    
