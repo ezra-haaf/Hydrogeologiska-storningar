@@ -22,8 +22,8 @@ Nedan hittas ett beslutsträd som guidar användaren genom processen att bygga e
      #STOBS [label="Bearbetning av\nstörningsdata"];
      #AVD    [label="Avdunstningsmodellering", URL="../examples/avdunstning.html", target="_top"];
      GWMOD  [label="Grundvattenmodellering", URL="../examples/tunnel1_gbg.html", target="_top",width=5.5];
-     DECIDE1 [label="Residualer \nnormalföredelade", shape=diamond];
-     DECIDE2 [label="Residualer \nnormalföredelade", shape=diamond];
+     DECIDE1 [label="Residualer \nnormalföredelade", shape=diamond, fill="#fff4cc"];
+     DECIDE2 [label="Residualer \nnormalföredelade", shape=diamond, fill="#fff4cc", URL="../examples/tunnel3_gbg.html"];
      ADD1   [label="Grundvattenmodellering med störningsserier", URL="../examples/tunnel2_gbg.html", target="_top", width=4];
      NED    [label="Nederbörd", URL="../examples/nederbord.html", target="_top"];
      TEMP   [label="Temperatur", URL="../examples/temperatur.html", target="_top"];
@@ -37,9 +37,9 @@ Nedan hittas ett beslutsträd som guidar användaren genom processen att bygga e
          color="grey95";
          fontname="Helvetica-Bold"
 
-         GWOBS [label="Bearbetning av\nGrundvattennivå observationer", fillcolor="white"];
-         STOBS [label="Bearbetning av\nstörningsdata", fillcolor="white"];
-         AVD [label="Avdunstningsmodellering", fillcolor="white"];
+         GWOBS [label="Bearbetning av\nGrundvattennivå observationer", fillcolor="white", URL="../examples/kompensation.html"];
+         STOBS [label="Bearbetning av\nstörningsdata", fillcolor="white, URL="../examples/prepare_leakage.html", target="_top""];
+         AVD [label="Avdunstningsmodellering", fillcolor="white", URL="../examples/avdunstning.html", target="_top"];
          { rank=same; GWOBS; STOBS; AVD}
      }
 
