@@ -38,7 +38,7 @@ Nedan hittas ett beslutsträd som guidar användaren genom processen att bygga e
          fontname="Helvetica-Bold"
 
          GWOBS [label="Bearbetning av\nGrundvattennivå observationer", fillcolor="white", URL="../examples/kompensation.html"];
-         STOBS [label="Bearbetning av\nstörningsdata", fillcolor="white, URL="../examples/prepare_leakage.html", target="_top""];
+         STOBS [label="Bearbetning av\nstörningsdata", fillcolor="white", URL="../examples/prepare_leakage.html", target="_top"];
          AVD [label="Avdunstningsmodellering", fillcolor="white", URL="../examples/avdunstning.html", target="_top"];
          { rank=same; GWOBS; STOBS; AVD}
      }
