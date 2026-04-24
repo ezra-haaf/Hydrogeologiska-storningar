@@ -6,9 +6,7 @@ Denna sidan ger en praktisk introduktion för att kunna börja använda metodern
 Arbetet i handledningen utgår främst från Python och notebook-baserade exempel.
 De viktigaste byggstenarna är:
 
-* Python som analysmiljö
-För att komma igång, se :doc:`Komma igång med Python <examples/get-python-running>`.
-
+* Python som analysmiljö: För att komma igång, se :doc:`Komma igång med Python <examples/get-python-running>`.
 * Jupyter notebooks för dokumenterade arbetsflöden
 * Pastas för tidsserieanalys av hydrogeologiska data
 

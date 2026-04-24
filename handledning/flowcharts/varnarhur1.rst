@@ -12,6 +12,7 @@ Nedan hittas ett beslutsträd som guidar användaren genom processen att bygga e
 
    digraph G {
      rankdir=TD;
+     compound=true;
      splines=ortho;
      node [shape=box, style="rounded,filled", fillcolor="#e8f3e8", penwidth=0, fontname="Helvetica"];
 
@@ -19,11 +20,11 @@ Nedan hittas ett beslutsträd som guidar användaren genom processen att bygga e
       
      KLIMAT [label="Insamling av klimatdata", URL="../examples/klimatdata.html", target="_top", width=4];
      STOR [label="Insamling av störningsdata"];
-     #STOBS [label="Bearbetning av\nstörningsdata"];
-     #AVD    [label="Avdunstningsmodellering", URL="../examples/avdunstning.html", target="_top"];
+     //STOBS [label="Bearbetning av\nstörningsdata"];
+     //AVD    [label="Avdunstningsmodellering", URL="../examples/avdunstning.html", target="_top"];
      GWMOD  [label="Grundvattenmodellering", URL="../examples/tunnel1_gbg.html", target="_top",width=5.5];
-     DECIDE1 [label="Residualer \nnormalföredelade", shape=diamond, fill="#fff4cc"];
-     DECIDE2 [label="Residualer \nnormalföredelade", shape=diamond, fill="#fff4cc", URL="../examples/tunnel3_gbg.html"];
+     DECIDE1 [label="Residualer \nnormalföredelade", shape=diamond, fillcolor="#fff4cc"];
+     DECIDE2 [label="Residualer \nnormalföredelade", shape=diamond, fillcolor="#fff4cc", URL="../examples/tunnel3_gbg.html"];
      ADD1   [label="Grundvattenmodellering med störningsserier", URL="../examples/tunnel2_gbg.html", target="_top", width=4];
      NED    [label="Nederbörd", URL="../examples/nederbord.html", target="_top"];
      TEMP   [label="Temperatur", URL="../examples/temperatur.html", target="_top"];
